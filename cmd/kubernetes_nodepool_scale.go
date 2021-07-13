@@ -67,7 +67,7 @@ var kubernetesNodePoolScaleCmd = &cobra.Command{
 		case "custom":
 			ow.WriteCustomOutput(outputFields)
 		default:
-			fmt.Printf("The pool (%s) was scale to (%s) in the cluster (%s)\n", utility.Green(args[1]), utility.Green(strconv.Itoa(numTargetNodesPoolScale)), utility.Green(kubernetesCluster.Name))
+			fmt.Printf("The pool (%s) was scaled to (%s) in the cluster (%s)\n", utility.Green(args[1]), utility.Green(strconv.Itoa(numTargetNodesPoolScale)), utility.Green(kubernetesCluster.Name))
 		}
 	},
 }
